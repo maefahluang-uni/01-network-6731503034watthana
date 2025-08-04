@@ -20,7 +20,7 @@ The `MockWebServer` in package `th.mfu` serves the web server in our system. It 
 4. Finally, close the client socket 
 5. Study the code in `main()` and tell me What it does?
 ```
- write your through here.
+ To make two MockWebServer instances run concurrently on different ports, you can create and start two separate Thread objects in the main method. Each thread will be responsible for a single MockWebServer instance, one on port 8080 and the other on port 8081.
 ```
 6. Run the `main()`, point the web browser to `http://localhost:8080` and `http://localhost:8081`
 It should shows a simple HTML with the word such as  `Hello, Web! on Port 8080`.
@@ -52,7 +52,11 @@ Think about the following,  modify the code to experiment it and put your though
 - What would be the benefit of running many instances?
 
 ```
-  Your thought here...
+1.If we have many users
+2.Assign threads to allow multiple servers to run simultaneously
+3.Do we need to use it together with HTML or do we need to learn more?
+4.How can we make the system fast and not slow?
+
 ```
 **Please push the code back to Github to submit this lab**
 After you push, ensure you have green checkmark on the repository.
